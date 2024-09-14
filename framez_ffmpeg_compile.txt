@@ -1,0 +1,7 @@
+Environment - msys2 (https://www.msys2.org)
+
+./configure --prefix=/mingw64 --enable-shared --disable-static --enable-ffnvcodec
+make -j16 [ 16 = number of cpus]
+make install
+
+git diff > changes.diff
